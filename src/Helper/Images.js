@@ -7,4 +7,12 @@ export const Images={
  shirt4:require('../Assets/Images/shirt5.jpg'),
  shirt5:require('../Assets/Images/shirt6.jpg'),
  enjoy:require('../Assets/Images/enjoy.png'),
+ FrenchCuff:require('../Assets/Images/FrenchCuff.png'),
+ OneButtonRounded:require('../Assets/Images/OneButtonRounded.png'),
+ TwoButtonAngled:require('../Assets/Images/TwoButtonAngled.png'),
+ CutawayCollar:require('../Assets/Images/CutawayCollar.png'),
+ WidespreadCollar:require('../Assets/Images/WidespreadCollar.png'),
+ DressCollar:require('../Assets/Images/DressCollar.png'),
+ Band:require('../Assets/Images/Band.png'),
+ FormalButtonDown:require('../Assets/Images/FormalButtonDown.png'),
 };
