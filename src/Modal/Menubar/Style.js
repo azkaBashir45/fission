@@ -11,7 +11,7 @@ import {StyleSheet} from 'react-native';
         width:160,
         height:150,
         marginTop:"20%",
-        borderRadius:10,marginLeft:10,
+        borderRadius:10,marginLeft:2,
         marginRight:10
     },
     bodyinnerStyle:{
