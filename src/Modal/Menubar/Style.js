@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
  export const styles = StyleSheet.create({
     backgroungStyle:{
-        backgroundColor:"#ffff",
+       backgroundColor:"pink",
+       marginTop:60,
         width:200,
-        height:400
+        height:720
     },
     cardStyle:{
         backgroundColor:"#ffff",
