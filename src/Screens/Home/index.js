@@ -33,7 +33,7 @@ class Index extends Component {
                             style={styles.imageStyle} source={Images.enjoy}>
                             <Text style={[styles.textStyle, { marginTop: 20, marginLeft: 10, color: "#00000" }]}>Enjoy</Text><Text style={[{ marginLeft: 50, fontSize: 18, marginTop: 10 }]}>The best fitting clothes in your closet</Text>
                             <Text style={[{ marginLeft: 80, fontSize: 18, marginTop: 2 }]}>Free returns on all orders</Text>
-                            <TouchableOpacity onPress={() => this.props.navigation.navigate('Sign')}><Text style={{ marginTop: 575, fontSize: 25, fontWeight: "bold", marginLeft: 270, color: "#8a2be2" }}>Login</Text></TouchableOpacity>
+                            <TouchableOpacity onPress={() => this.props.navigation.navigate('Login')}><Text style={{ marginTop: 575, fontSize: 25, fontWeight: "bold", marginLeft: 270, color: "#8a2be2" }}>Login</Text></TouchableOpacity>
                         </ImageBackground>
                     </View>
                 </ScrollView>

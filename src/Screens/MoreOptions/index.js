@@ -36,7 +36,7 @@ class Index extends Component {
                  <Text style={{backgroundColor:"#fff",borderWidth:1,marginLeft:87,width:187,height:36,textAlign:"center",marginTop:8,textAlignVertical:"center"}}>NO WATCH</Text>
                  <Text style={{backgroundColor:"#fff",borderWidth:1,marginLeft:87,width:187,height:36,textAlign:"center",marginTop:8,textAlignVertical:"center"}}>RIGHT SIDE</Text>
                  </ScrollView>
-                   <Button style={{width:100,marginLeft:250,backgroundColor:"#8a2be2",marginTop:40}} mode="contained" onPress={() =>this.props.navigation.navigate('Length')}>
+                   <Button style={{width:100,marginLeft:250,backgroundColor:"#8a2be2",marginTop:40}} mode="contained" onPress={() =>this.props.navigation.navigate('Cart')}>
                         Next
                    </Button>
             </View>
