@@ -4,6 +4,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 import { Text, View, ImageBackground, TouchableOpacity,ScrollView,Image ,Modal} from 'react-native';
 import { styles } from './Style';
+import { Images } from '../../Helper/Images';
 class Index extends Component {
   constructor(props) {
     super(props)
@@ -16,7 +17,22 @@ class Index extends Component {
           <View style={styles.backgroungStyle}>
           
                  <View style={{ height: 56, backgroundColor: "#8a2be2",flexDirection:"row" }}>
-                 <TouchableOpacity onPress={()=>this.setState({isVisiableModal:true})}><FontAwesome5  name={'bars'} style={{marginTop: 20, marginLeft: 20, color: "#ffff",fontsize:20}} /></TouchableOpacity><Text style={{ marginTop: 18, marginLeft: 20,fontSize:16, color: "#ffff" }}>Customer</Text>
+                 <TouchableOpacity onPress={()=>this.setState({isVisiableModal:true})}><FontAwesome5  name={'bars'} style={{marginTop: 20, marginLeft: 20, color: "#ffff",fontsize:20}} /></TouchableOpacity><Text style={{ marginTop: 18, marginLeft: 20,fontSize:16, color: "#ffff" }}>Add Product</Text>
+          </View>
+          <View >
+           <Image style={styles.imageStyle} source={Images.enjoy} />
+           <TextInput style={styles.inputStyle}
+           label="Product Name"
+           ></TextInput>
+           <TextInput style={styles.inputStyle}
+           label="Category Choose"
+           ></TextInput>
+          <TextInput style={styles.inputStyle}
+           label="Price"
+           ></TextInput>
+            <Button  style={styles.buttonStyle} mode="contained" onPress={() => console.log('Pressed')}>
+                Save
+  </Button>
           </View>
           <Modal visible={this.state.isVisiableModal} transparent={true}>
             <View style={{width:"50%",height:400,marginTop:59,backgroundColor:"yellow"}}>

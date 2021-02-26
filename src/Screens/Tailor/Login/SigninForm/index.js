@@ -18,7 +18,7 @@ class Index extends Component {
                         <Button style={[styles.buttonStyle,{marginTop:35}]} mode="contained" onPress={() => this.props.navigation.navigate('TaPannel')}>
                             <Text style={{ marginTop: 50, fontSize: 18 }}>TLogin</Text>
                         </Button>
-                        <Button style={[styles.buttonStyle,{marginTop:10}]} mode="contained" onPress={() => this.props.navigation.navigate('ShowStyle')}>
+                        <Button style={[styles.buttonStyle,{marginTop:10}]} mode="contained" onPress={() => this.props.navigation.navigate('APanel')}>
                             <Text style={{ marginTop: 50, fontSize: 18 }}>ALogin</Text>
                         </Button>
                         <View style={{ flexDirection: "row" }}><Text style={[styles.bottomtextStyle, { marginLeft: 40 }]}>Do'nt have an account?</Text><TouchableOpacity onPress={() => this.props.navigation.navigate('SignUp')}><Text style={[styles.bottomtextStyle, { marginLeft: 10, color: "#8a2be2", fontWeight: "bold" }]}>Sign Up</Text></TouchableOpacity></View>
