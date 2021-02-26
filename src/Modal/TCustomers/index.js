@@ -28,7 +28,7 @@ class Index extends Component {
       <Text style={styles.title}>Order Id</Text>
       <Text style={[styles.title,{marginLeft:20}]}>No</Text>
       <Text style={[styles.title,{marginLeft:20}]}>Name</Text>
-      <Text style={[styles.title,{marginLeft:20}]}>Delivery Date</Text>
+      <Text style={[styles.title,{marginLeft:20}]}>City</Text>
     </View>
           
           

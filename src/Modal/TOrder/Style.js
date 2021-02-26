@@ -16,10 +16,14 @@ import {StyleSheet} from 'react-native';
     bodyinnerStyle:{
         margin:"5%"
     },
-    title:{
-        marginTop:30,
+    searchStyle:{
+        marginTop:5,
+        padding:10
+     },
+     title:{
+        marginTop:15,
         alignSelf:"center",
-        fontSize:16,
+        fontSize:20,
         fontWeight:"bold",
         color:"#8a2be2"
     },
@@ -61,7 +65,7 @@ import {StyleSheet} from 'react-native';
         height:66,
         marginLeft:20,
         marginRight:20,
-        marginRight:20
+        marginTop:466
     },
     tabiconStyle:{
         color:"red",fontSize:30,
