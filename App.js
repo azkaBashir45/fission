@@ -24,6 +24,7 @@ import Customer from "./src/Modal/TCustomers/index";
 import Menu from "./src/Modal/Menubar/index";
 import AdminPannel from "./src/Screens/Admin/AdminPannel/index";
 import AdminProduct from "./src/Modal/AProduct/index";
+import AdminProductList from "./src/Screens/Admin/ProductList/index";
 const Stack = createStackNavigator();
 class App extends Component{
     render(){
@@ -51,6 +52,7 @@ class App extends Component{
                 <Stack.Screen name="menu" component={Menu} />
                 <Stack.Screen name="APanel" component={AdminPannel} />
                 <Stack.Screen name="AProduct" component={AdminProduct} />
+                <Stack.Screen name="AProductList" component={AdminProductList} />
               </Stack.Navigator>
             </NavigationContainer>
           );

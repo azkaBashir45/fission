@@ -8,22 +8,30 @@ import {StyleSheet} from 'react-native';
 iconStyle:{
 color:"#8a2be2",
  alignSelf:"center",
- fontSize:150,
+ fontSize:125,
  marginTop:20
  
 },
 inputStyle:{
    backgroundColor:"#fff",
-   marginTop:20,
-   margin:20
+   margin:5
 
 },
+HeadStyle: { 
+    height: 50,
+    alignContent: "center",
+    backgroundColor: '#8a2be2',
+  
+  },
+  TableText: { 
+    margin: 10,  color:"#fff"
+  },
      buttonStyle:{
-         width:200,
+         width:150,
          backgroundColor:"#8a2be2",
          borderRadius:10,
-         marginLeft:80,
-         marginTop:40
+         marginLeft:20,
+         marginTop:60
      },
     bottomTabStyle:{
         flexDirection:"row",

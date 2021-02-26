@@ -20,7 +20,7 @@ class Index extends Component {
                  <TouchableOpacity onPress={()=>this.setState({isVisiableModal:true})}><FontAwesome5  name={'bars'} style={{marginTop: 20, marginLeft: 20, color: "#ffff",fontsize:20}} /></TouchableOpacity><Text style={{ marginTop: 18, marginLeft: 20,fontSize:16, color: "#ffff" }}>Add Product</Text>
           </View>
           <View >
-           <Image style={styles.imageStyle} source={Images.enjoy} />
+          <FontAwesome5 name={'product-hunt'} style={styles.iconStyle}/>
            <TextInput style={styles.inputStyle}
            label="Product Name"
            ></TextInput>

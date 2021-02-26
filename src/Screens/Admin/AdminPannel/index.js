@@ -22,7 +22,7 @@ class Index extends Component {
            <View style={styles.bottomTabStyle}>
            <TouchableOpacity onPress={()=>this.props.navigation.navigate('TDashboard')} ><View><FontAwesome5 name={'tachometer-alt'} style={styles.tabiconStyle}></FontAwesome5></View><Text style={styles.tabtextStule}>Dashboard</Text></TouchableOpacity>
            <TouchableOpacity onPress={()=>this.props.navigation.navigate('TOrder')}><View><FontAwesome5 name={'first-order'} style={[styles.tabiconStyle,{marginLeft:35}]}/><Text style={[styles.tabtextStule,{marginLeft:28}]}>Order</Text></View></TouchableOpacity>
-           <TouchableOpacity onPress={()=>this.props.navigation.navigate('AProduct')}><View><FontAwesome5 name={'product-hunt'} style={[styles.tabiconStyle,{marginLeft:40}]}/><Text style={[styles.tabtextStule,{marginLeft:28}]}>Product</Text></View></TouchableOpacity>
+           <TouchableOpacity onPress={()=>this.props.navigation.navigate('AProductList')}><View><FontAwesome5 name={'product-hunt'} style={[styles.tabiconStyle,{marginLeft:40}]}/><Text style={[styles.tabtextStule,{marginLeft:28}]}>Product</Text></View></TouchableOpacity>
            <TouchableOpacity onPress={()=>this.props.navigation.navigate('TCustomer')}><View><FontAwesome5 name={'baby'} style={[styles.tabiconStyle,{marginLeft:50}]}/><Text style={[styles.tabtextStule,{marginLeft:30}]}>Customer</Text ></View></TouchableOpacity>
            </View>
            <Modal visible={this.state.isVisiableModal} transparent={true}>
