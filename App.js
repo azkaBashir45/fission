@@ -28,7 +28,11 @@ import AdminProduct from "./src/Modal/AProduct/index";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import AdminProductList from "./src/Screens/Admin/ProductList/index";
+<<<<<<< HEAD
 import MyTabs from "./test";
+=======
+import MyTab from "./test";
+>>>>>>> 6d4771e1c514679a396462e8cddbd5ae6b02dfe1
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -62,6 +66,7 @@ class App extends Component{
                 <Stack.Screen name="menu" component={Menu} />
                 <Stack.Screen name="APanel" component={AdminPannel} />
                 <Stack.Screen name="AProduct" component={AdminProduct} />
+                <Stack.Screen name="MyTab" component={MyTab} />
                 <Stack.Screen name="AProductList" component={AdminProductList} />
               </Stack.Navigator>
             </NavigationContainer>

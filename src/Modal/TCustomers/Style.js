@@ -5,6 +5,10 @@ import {StyleSheet} from 'react-native';
         width:"100%",
         height:"100%"
     },
+    searchStyle:{
+       marginTop:5,
+       padding:10
+    },
     cardStyle:{
         backgroundColor:"#ffff",
         width:160,
@@ -17,9 +21,9 @@ import {StyleSheet} from 'react-native';
         margin:"5%"
     },
     title:{
-        marginTop:30,
+        marginTop:15,
         alignSelf:"center",
-        fontSize:16,
+        fontSize:20,
         fontWeight:"bold",
         color:"#8a2be2"
     },
@@ -61,7 +65,7 @@ import {StyleSheet} from 'react-native';
         height:66,
         marginLeft:20,
         marginRight:20,
-        marginTop:570
+       marginTop:460
     },
     tabiconStyle:{
         color:"red",fontSize:30,

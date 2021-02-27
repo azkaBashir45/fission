@@ -7,7 +7,11 @@ class Index extends Component {
     constructor(props) {
         super(props)
         setTimeout(() => {
+<<<<<<< HEAD
             this.props.navigation.navigate('test1')
+=======
+            this.props.navigation.navigate('MyTab')
+>>>>>>> 6d4771e1c514679a396462e8cddbd5ae6b02dfe1
         }, 3000)
     }
 
