@@ -15,10 +15,6 @@ class Index extends Component {
     render() {
         return (
           <View style={styles.backgroungStyle}>
-          
-                 <View style={{ height: 56, backgroundColor: "#8a2be2",flexDirection:"row" }}>
-                 <TouchableOpacity onPress={()=>this.setState({isVisiableModal:true})}><FontAwesome5  name={'bars'} style={{marginTop: 20, marginLeft: 20, color: "#ffff",fontsize:20}} /></TouchableOpacity><Text style={{ marginTop: 18, marginLeft: 20,fontSize:16, color: "#ffff" }}>Add Product</Text>
-          </View>
           <View >
           <FontAwesome5 name={'product-hunt'} style={styles.iconStyle}/>
            <TextInput style={styles.inputStyle}

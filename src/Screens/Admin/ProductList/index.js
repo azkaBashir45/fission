@@ -22,9 +22,6 @@ class Index extends Component {
         return (
           <View style={styles.backgroungStyle}>
           
-                 <View style={{ height: 56, backgroundColor: "#8a2be2",flexDirection:"row" }}>
-                 <TouchableOpacity onPress={()=>this.setState({isVisiableModal:true})}><FontAwesome5  name={'bars'} style={{marginTop: 20, marginLeft: 20, color: "#ffff",fontsize:20}} /></TouchableOpacity><Text style={{ marginTop: 18, marginLeft: 20,fontSize:16, color: "#ffff" }}>Product List</Text>
-          </View>
           <Table borderStyle={{borderWidth: 1, borderColor: '#8a2be2'}}>
          <Row data={this.state.HeadTable} style={styles.HeadStyle} textStyle={styles.TableText}/>
          <TouchableOpacity onPress={()=>this.setState({isVisiableModal:true})}><Rows data={this.state.DataTable} textStyle={{marginLeft:10}} /></TouchableOpacity>

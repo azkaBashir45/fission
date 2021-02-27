@@ -6,28 +6,13 @@ import {StyleSheet} from 'react-native';
         height:"100%"
     },
     
-    bottomTabStyle:{
-        flexDirection:"row",
-        marginBottom:10,
-        borderRadius:2,
-        borderWidth:1,
-        height:66,
-        marginLeft:5,
-        marginRight:5,
-        marginTop:590
-       
-    },
-    tabiconStyle:{
-        color:"red",fontSize:30,
-        marginLeft:40,
-        marginTop:7
-    },
-    tabtextStule:{
-       fontSize:16,
-       fontWeight:"bold",
-       marginBottom:5,
-       marginLeft:20,
-      
-    },
-   
+  headerBodyStyle:{
+    height: 56, backgroundColor: "#8a2be2",flexDirection:"row"
+  },
+  headericonStyle:{
+    fontSize:20,marginTop: 20, marginLeft: 20, color: "#ffff"
+  },
+  headerTextStyle:{
+    marginTop: 20, marginLeft: 20, color: "#ffff"
+  }
 })
