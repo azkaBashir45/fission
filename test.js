@@ -1,11 +1,8 @@
 import * as React from 'react';
 import { Text, View,TouchableOpacity } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import { Label } from 'native-base';
-
 
 function HomeScreen() {
   return (
@@ -15,10 +12,10 @@ function HomeScreen() {
   );
 }
 
-function SettingsScreen() {
+function SettingsScreen({navigation}) {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <TouchableOpacity onPress={()=>this.props.navigation.navigate('Home')}><Text>Settings!</Text></TouchableOpacity>
+      <TouchableOpacity onPress={()=>navigation.navigate('Home')}><Text>Settings!</Text></TouchableOpacity>
     </View>
   );
 }
