@@ -65,7 +65,11 @@ import {StyleSheet} from 'react-native';
         height:66,
         marginLeft:20,
         marginRight:20,
+<<<<<<< HEAD
        marginTop:460
+=======
+        marginTop:570
+>>>>>>> 5a6e7851168e3832a1b9a25d1569f711c90510ea
     },
     tabiconStyle:{
         color:"red",fontSize:30,

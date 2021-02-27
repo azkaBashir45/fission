@@ -1,50 +1,39 @@
 import React, { Component } from 'react';
-import { Button, TextInput ,Card,Searchbar} from 'react-native-paper';
+import { Button, TextInput ,Card} from 'react-native-paper';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 import { Text, View, ImageBackground, TouchableOpacity,ScrollView,Image ,Modal} from 'react-native';
 import { styles } from './Style';
+import { Images } from '../../Helper/Images';
 class Index extends Component {
-<<<<<<< HEAD
-  constructor(props){
-    super(props)
-    this.state={
-      search:""
-=======
   constructor(props) {
     super(props)
     this.state = {
         isVisiableModal: false
->>>>>>> 5a6e7851168e3832a1b9a25d1569f711c90510ea
     }
   }
     render() {
         return (
           <View style={styles.backgroungStyle}>
-<<<<<<< HEAD
-         
-=======
           
->>>>>>> 5a6e7851168e3832a1b9a25d1569f711c90510ea
                  <View style={{ height: 56, backgroundColor: "#8a2be2",flexDirection:"row" }}>
-                 <TouchableOpacity onPress={()=>this.setState({isVisiableModal:true})}><FontAwesome5  name={'bars'} style={{marginTop: 20, marginLeft: 20, color: "#ffff",fontsize:20}} /></TouchableOpacity><Text style={{ marginTop: 18, marginLeft: 20,fontSize:16, color: "#ffff" }}>Customer</Text>
+                 <TouchableOpacity onPress={()=>this.setState({isVisiableModal:true})}><FontAwesome5  name={'bars'} style={{marginTop: 20, marginLeft: 20, color: "#ffff",fontsize:20}} /></TouchableOpacity><Text style={{ marginTop: 18, marginLeft: 20,fontSize:16, color: "#ffff" }}>Add Product</Text>
           </View>
-<<<<<<< HEAD
-         
-          <Searchbar style={styles.searchStyle}
-      placeholder="Search"
-      onChangeText={(search)=>this.setState({search:search})}
-      value={this.state.search}
-    />
-    <View style={{flexDirection:"row",marginRight:20,marginLeft:20}}>
-      <Text style={styles.title}>Order Id</Text>
-      <Text style={[styles.title,{marginLeft:20}]}>No</Text>
-      <Text style={[styles.title,{marginLeft:20}]}>Name</Text>
-      <Text style={[styles.title,{marginLeft:20}]}>City</Text>
-    </View>
-          
-          
-=======
+          <View >
+          <FontAwesome5 name={'product-hunt'} style={styles.iconStyle}/>
+           <TextInput style={styles.inputStyle}
+           label="Product Name"
+           ></TextInput>
+           <TextInput style={styles.inputStyle}
+           label="Category Choose"
+           ></TextInput>
+          <TextInput style={styles.inputStyle}
+           label="Price"
+           ></TextInput>
+            <Button  style={styles.buttonStyle} mode="contained" onPress={() => console.log('Pressed')}>
+                Save
+  </Button>
+          </View>
           <Modal visible={this.state.isVisiableModal} transparent={true}>
             <View style={{width:"50%",height:400,marginTop:59,backgroundColor:"yellow"}}>
            <TouchableOpacity onPress={()=>this.props.navigation.navigate('TDashboard')} ><TouchableOpacity onPress={()=>this.setState({isVisiableModal:false})} ><View style={{flexDirection:"row"}}><FontAwesome5 name={'tachometer-alt'} style={styles.tabiconStyle}></FontAwesome5><Text style={styles.tabtextStule}>Dashboard</Text></View></TouchableOpacity></TouchableOpacity>
@@ -55,7 +44,6 @@ class Index extends Component {
            
        
          
->>>>>>> 5a6e7851168e3832a1b9a25d1569f711c90510ea
            <View style={styles.bottomTabStyle}>
            <TouchableOpacity onPress={()=>this.props.navigation.navigate('TDashboard')} ><View><FontAwesome5 name={'tachometer-alt'} style={styles.tabiconStyle}></FontAwesome5></View><Text style={styles.tabtextStule}>Dashboard</Text></TouchableOpacity>
            <TouchableOpacity onPress={()=>this.props.navigation.navigate('TOrder')}><View><FontAwesome5 name={'first-order'} style={[styles.tabiconStyle,{marginLeft:60}]}/><Text style={[styles.tabtextStule,{marginLeft:56}]}>Order</Text></View></TouchableOpacity>
