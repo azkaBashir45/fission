@@ -1,6 +1,7 @@
 // In App.js in a new project
 
 import React,{Component} from 'react';
+import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import SplashScreen from  "./src/Screens/SplashScreen/index";
@@ -24,13 +25,21 @@ import Customer from "./src/Modal/TCustomers/index";
 import Menu from "./src/Modal/Menubar/index";
 import AdminPannel from "./src/Screens/Admin/AdminPannel/index";
 import AdminProduct from "./src/Modal/AProduct/index";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import AdminProductList from "./src/Screens/Admin/ProductList/index";
+import MyTabs from "./test";
 const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
+const Drawer = createDrawerNavigator();
+
 class App extends Component{
     render(){
         return (
+          <View>
             <NavigationContainer>
               <Stack.Navigator headerMode="none">
+              <Stack.Screen name="test1" component={test} />
                 <Stack.Screen name="Splash" component={SplashScreen} />
                 <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="Login" component={LoginPage} />
@@ -44,6 +53,7 @@ class App extends Component{
                 <Stack.Screen name="Collar" component={ChooseCollar} />
                 <Stack.Screen name="Cuff" component={ChooseCuff} />
                 <Stack.Screen name="Length" component={ChooseLength} />
+                <Stack.Screen name="My" component={MyTabs} />
                 <Stack.Screen name="Options" component={MoreOptions} />
                 <Stack.Screen name="Cart" component={Cart} />
                 <Stack.Screen name="TDashboard" component={Dashboard} />
@@ -55,6 +65,16 @@ class App extends Component{
                 <Stack.Screen name="AProductList" component={AdminProductList} />
               </Stack.Navigator>
             </NavigationContainer>
+             <NavigationContainer>
+             <Drawer.Navigator>
+        <Drawer.Screen name="Home" component={HomeScreen} />
+     
+      </Drawer.Navigator>
+           </NavigationContainer>
+           <NavigationContainer>
+      <MyTabs />
+    </NavigationContainer>
+           </View>
           );
 
     }
