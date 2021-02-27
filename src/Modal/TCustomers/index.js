@@ -5,31 +5,21 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import { Text, View, ImageBackground, TouchableOpacity,ScrollView,Image ,Modal} from 'react-native';
 import { styles } from './Style';
 class Index extends Component {
-<<<<<<< HEAD
-  constructor(props){
-    super(props)
-    this.state={
-      search:""
-=======
   constructor(props) {
     super(props)
     this.state = {
         isVisiableModal: false
->>>>>>> 5a6e7851168e3832a1b9a25d1569f711c90510ea
+
     }
   }
     render() {
         return (
           <View style={styles.backgroungStyle}>
-<<<<<<< HEAD
          
-=======
           
->>>>>>> 5a6e7851168e3832a1b9a25d1569f711c90510ea
                  <View style={{ height: 56, backgroundColor: "#8a2be2",flexDirection:"row" }}>
                  <TouchableOpacity onPress={()=>this.setState({isVisiableModal:true})}><FontAwesome5  name={'bars'} style={{marginTop: 20, marginLeft: 20, color: "#ffff",fontsize:20}} /></TouchableOpacity><Text style={{ marginTop: 18, marginLeft: 20,fontSize:16, color: "#ffff" }}>Customer</Text>
           </View>
-<<<<<<< HEAD
          
           <Searchbar style={styles.searchStyle}
       placeholder="Search"
@@ -44,7 +34,7 @@ class Index extends Component {
     </View>
           
           
-=======
+
           <Modal visible={this.state.isVisiableModal} transparent={true}>
             <View style={{width:"50%",height:400,marginTop:59,backgroundColor:"yellow"}}>
            <TouchableOpacity onPress={()=>this.props.navigation.navigate('TDashboard')} ><TouchableOpacity onPress={()=>this.setState({isVisiableModal:false})} ><View style={{flexDirection:"row"}}><FontAwesome5 name={'tachometer-alt'} style={styles.tabiconStyle}></FontAwesome5><Text style={styles.tabtextStule}>Dashboard</Text></View></TouchableOpacity></TouchableOpacity>
@@ -55,7 +45,7 @@ class Index extends Component {
            
        
          
->>>>>>> 5a6e7851168e3832a1b9a25d1569f711c90510ea
+
            <View style={styles.bottomTabStyle}>
            <TouchableOpacity onPress={()=>this.props.navigation.navigate('TDashboard')} ><View><FontAwesome5 name={'tachometer-alt'} style={styles.tabiconStyle}></FontAwesome5></View><Text style={styles.tabtextStule}>Dashboard</Text></TouchableOpacity>
            <TouchableOpacity onPress={()=>this.props.navigation.navigate('TOrder')}><View><FontAwesome5 name={'first-order'} style={[styles.tabiconStyle,{marginLeft:60}]}/><Text style={[styles.tabtextStule,{marginLeft:56}]}>Order</Text></View></TouchableOpacity>
